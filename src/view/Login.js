@@ -9,7 +9,7 @@ const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         // Aquí podrías añadir la lógica de autenticación
-        navigate('/menu'); // Redirige al menú principal
+        navigate('/menuOrganizaciones'); // Redirige al menú principal
     };
 
     return (

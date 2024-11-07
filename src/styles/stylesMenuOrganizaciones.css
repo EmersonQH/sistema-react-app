@@ -15,7 +15,7 @@ html, body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     color: #4B125F;
-    border: 8px solid #771d4b;
+    border: 4px solid #771d4b;
     height: 100vh; /* Ocupa toda la altura de la ventana */
     width: 100vw; /* Ocupa toda la anchura de la ventana */
 }
@@ -63,6 +63,9 @@ html, body {
     margin: 5px;
     border-radius: 5px;
 }
+.register-button{
+    margin-left: 20px;
+}
 
 .sidebar {
     background-color: #E4D2DB;
@@ -70,8 +73,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 8px solid #771d4b;
-    border-right: 8px solid #771d4b;
+    border-top: 3px solid #771d4b;
+    border-right: 3px solid #771d4b;
     height: 100%; /* Ajusta la altura para que ocupe toda la pantalla */
     flex-shrink: 0; /* Evita que la barra lateral se reduzca */
 }
@@ -109,13 +112,14 @@ html, body {
     margin-top: 2px;
     color: #ffffff;
     cursor: pointer;
-  }
+}
 
 .main-content {
     margin: 0;
+    background-color: white;
     flex-grow: 1;
     padding: 0px;
-    border-top: 8px solid #771d4b;
+    border-top: 3px solid #771d4b;
     overflow-y: auto; /* Permite desplazamiento si el contenido excede la pantalla */
     width: calc(100% - 200px); /* Ocupa el ancho restante sin la barra lateral */
 }
@@ -131,35 +135,57 @@ h3 {
     background: #DAA6B7;
     margin-left: 0;
     padding-left: 3%;
-    border-top: 8px solid #771d4b;
-    border-bottom: 8px solid #771d4b;
+    border-top: 2px solid #771d4b;
+    border-bottom: 2px solid #771d4b;
     color: #4B125F;
 }
-
+h4{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 .organization-section,
 .organizations-section {
     margin-top: 20px;
 }
 
-table {
+
+.menu-centertabla {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    
 }
 
-th, td {
+.menu-centertabla th, .menu-centertabla td {
     border: 1px solid #ddd;
-    padding: 7px;
+    padding: 10px;
     text-align: center;
 }
 
-th {
+.menu-centertabla th {
     background-color: #E9E4EA;
+    color: #4B125F;
 }
+
+.menu-centertabla tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.menu-centertabla tbody tr:hover {
+    background-color: #E4D2DB;
+}
+.menu-tabla-center{
+    margin: auto;
+    width: 95%;
+    
+}
+
+
 
 .sectionTextBuscar {
     display: flex;
-    margin-right: 30px;
+    margin: auto;
+    width: 50%;
 }
 
 .textBuscar {
@@ -192,6 +218,7 @@ th {
 .export-buttons {
     display: flex;
     justify-content: flex-start;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
