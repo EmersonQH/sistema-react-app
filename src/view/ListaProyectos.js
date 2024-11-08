@@ -1,9 +1,16 @@
 import React from "react"
-
+import { useNavigate } from "react-router-dom";
 import '../styles/stylesListaProyectos.css'
 
 const ListaProyectos = () => {
+    const navigate = useNavigate();
 
+    const irARegistroProyecto = () => {
+        navigate("/registroProyecto");
+    };
+    const irALogin = () => {
+        navigate("/");
+    };
 
 
     return (
@@ -27,7 +34,7 @@ const ListaProyectos = () => {
                     <div className="lista-profile-section" >
                         <div className="lista-profile-icon">👤</div>
                         <p2>Nombre Autor - Cod</p2>
-                        <button className="lista-logout-button" >Cerrar Sesión</button>
+                        <button onClick={irALogin} className="lista-logout-button" >Cerrar Sesión</button>
                     </div>
                 </aside>
 
@@ -36,7 +43,7 @@ const ListaProyectos = () => {
                     <section className="lista-organizations-section">
 
                         <div className="lista-search-section-bar">
-                            <button className="lista-register-button">Registrar Organización</button>
+                            <button onClick={irARegistroProyecto} className="lista-register-button">Nuevo proyecto</button>
                             <div className="lista-sectionTextBuscar ">
                                 <input className="lista-textBuscar" type="text" placeholder="Buscar" />
                                 <button className="lista-search-button">Buscar</button>

@@ -1,11 +1,16 @@
 import React from "react"
-
+import { useNavigate } from "react-router-dom";
 import '../styles/stylesMenuOrganizaciones.css'
 
 const MenuOrganizaciones = () => {
-        
+    const navigate = useNavigate();
 
-
+    const irALogin = () => {
+        navigate("/");
+    };
+    const irAListaProyecto = () => {
+        navigate("/listaProyecto");
+    };
     return (
         <div className="menu-container">
             <header className="menu-header">
@@ -27,7 +32,7 @@ const MenuOrganizaciones = () => {
                     <div className="profile-section" >
                         <div className="profile-icon">👤</div>
                         <p2>Nombre Autor - Cod</p2>
-                        <button className="logout-button" >Cerrar Sesión</button>
+                        <button onClick={irALogin} className="logout-button" >Cerrar Sesión</button>
                     </div>
                 </aside>
 
@@ -89,7 +94,7 @@ const MenuOrganizaciones = () => {
                                         <th>Opciones</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody onClick={irAListaProyecto}>
                                     <tr>
                                         <td>ORG-0002</td>
                                         <td>Mocar Company</td>

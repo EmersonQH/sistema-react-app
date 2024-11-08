@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import MenuOrganizaciones from './view/MenuOrganizaciones.js';
 import ListaProyectos from './view/ListaProyectos.js';
+import RegistroProyecto from './view/RegistroProyecto.js';
 function App() {
   return (
     <Router>
@@ -11,6 +12,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/menuOrganizaciones" element={<MenuOrganizaciones />} />
           <Route path="/listaProyecto" element={<ListaProyectos />} />
+          <Route path="/registroProyecto" element={<RegistroProyecto />} />
         </Routes>
       </div>
     </Router>
