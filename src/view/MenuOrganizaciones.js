@@ -1,6 +1,9 @@
 import React from "react"
 import { useNavigate } from "react-router-dom";
+import { FaFolder, FaPencilAlt, FaTrash } from "react-icons/fa";
 import '../styles/stylesMenuOrganizaciones.css'
+
+
 
 const MenuOrganizaciones = () => {
     const navigate = useNavigate();
@@ -14,7 +17,7 @@ const MenuOrganizaciones = () => {
     const irARegistroOrganizacion = () => {
         navigate("/registroOrganizaciones");
     };
-    
+
     return (
         <div className="menu-container">
             <header className="menu-header">
@@ -62,7 +65,10 @@ const MenuOrganizaciones = () => {
                                         <td>Empresa de Software ReqWizards</td>
                                         <td>23/10/2023</td>
                                         <td>00.01</td>
-                                        <td></td>
+                                        <td>
+                                            <button className="botton-crud"><FaFolder style={{ color: "yellow", cursor: "pointer" }} /></button>
+                                            <button className="botton-crud"><FaPencilAlt style={{ color: "blue", cursor: "pointer" }} /></button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -104,14 +110,22 @@ const MenuOrganizaciones = () => {
                                         <td>Mocar Company</td>
                                         <td>23/10/2023</td>
                                         <td>00.01</td>
-                                        <td></td>
+                                        <td>
+                                            <button className="botton-crud"><FaFolder style={{ color: "yellow", cursor: "pointer" }} /></button>
+                                            <button className="botton-crud"><FaPencilAlt style={{ color: "blue", cursor: "pointer" }} /></button>
+                                            <button className="botton-crud"><FaTrash style={{ color: "red", cursor: "pointer" }} /></button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>ORG-0003</td>
                                         <td>PetShop Veterinaria</td>
                                         <td>10/05/2023</td>
                                         <td>00.01</td>
-                                        <td></td>
+                                        <td>
+                                            <button className="botton-crud"><FaFolder style={{ color: "yellow", cursor: "pointer" }} /></button>
+                                            <button className="botton-crud"><FaPencilAlt style={{ color: "blue", cursor: "pointer" }} /></button>
+                                            <button className="botton-crud"><FaTrash style={{ color: "red", cursor: "pointer" }} /></button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>

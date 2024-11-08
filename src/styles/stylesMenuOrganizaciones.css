@@ -222,7 +222,9 @@ h4{
     margin-left: 20px;
     margin-top: 10px;
 }
-
+.botton-crud{
+    margin-left: 6px;
+}
 button:hover {
     background-color: #7a1a5e;
 }

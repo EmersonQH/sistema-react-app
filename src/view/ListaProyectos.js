@@ -1,5 +1,6 @@
 import React from "react"
 import { useNavigate } from "react-router-dom";
+import { FaFolder, FaPencilAlt, FaTrash } from "react-icons/fa";
 import '../styles/stylesListaProyectos.css'
 
 const ListaProyectos = () => {
@@ -78,7 +79,11 @@ const ListaProyectos = () => {
                                     <td>26/10/2023</td>
                                     <td>24/10/2023</td>
                                     <td>En Proceso</td>
-                                    <td></td>
+                                    <td>
+                                        <button className="botton-crud"><FaFolder style={{ color: "yellow", cursor: "pointer" }} /></button>
+                                        <button className="botton-crud"><FaPencilAlt style={{ color: "blue", cursor: "pointer" }} /></button>
+                                        <button className="botton-crud"><FaTrash style={{ color: "red", cursor: "pointer" }} /></button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>PROY-002</td>
@@ -86,7 +91,11 @@ const ListaProyectos = () => {
                                     <td>10/05/2023</td>
                                     <td>24/10/2023</td>
                                     <td>Concluido</td>
-                                    <td></td>
+                                    <td>
+                                        <button className="botton-crud"><FaFolder style={{ color: "yellow", cursor: "pointer" }} /></button>
+                                        <button className="botton-crud"><FaPencilAlt style={{ color: "blue", cursor: "pointer" }} /></button>
+                                        <button className="botton-crud"><FaTrash style={{ color: "red", cursor: "pointer" }} /></button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>PROY-003</td>
@@ -94,7 +103,11 @@ const ListaProyectos = () => {
                                     <td>24/04/2023</td>
                                     <td>24/10/2023</td>
                                     <td>Concluido</td>
-                                    <td></td>
+                                    <td>
+                                        <button className="botton-crud"><FaFolder style={{ color: "yellow", cursor: "pointer" }} /></button>
+                                        <button className="botton-crud"><FaPencilAlt style={{ color: "blue", cursor: "pointer" }} /></button>
+                                        <button className="botton-crud"><FaTrash style={{ color: "red", cursor: "pointer" }} /></button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
