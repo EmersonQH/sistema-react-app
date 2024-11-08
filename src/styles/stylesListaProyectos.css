@@ -104,6 +104,7 @@ body {
     width: 100%;
     font-weight: bolder;
     font-size: larger;
+    cursor: pointer;
 }
 
 .lista-logout-button {

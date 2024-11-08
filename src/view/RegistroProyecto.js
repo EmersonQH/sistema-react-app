@@ -6,10 +6,12 @@ const RegistroProyecto = () => {
 
     const navigate = useNavigate();
 
+    const irAMenuOrganizaciones = () => {
+        navigate("/menuOrganizaciones");
+    };
     const irAListaProyecto = () => {
         navigate("/listaProyecto");
     };
-
     const irALogin = () => {
         navigate("/");
     };
@@ -30,7 +32,7 @@ const RegistroProyecto = () => {
                             <button className="adelante-button">Adelante</button>
                         </div>*/}
                     <div className="bar-rp">
-                        <p1>MENU PRINCIPAL</p1>
+                        <p1 onClick={irAMenuOrganizaciones}>MENU PRINCIPAL</p1>
                     </div>
 
                     <div className="profile-section" >

@@ -5,6 +5,9 @@ import '../styles/stylesListaProyectos.css'
 const ListaProyectos = () => {
     const navigate = useNavigate();
 
+    const irAMenuOrganizaciones = () => {
+        navigate("/menuOrganizaciones");
+    };
     const irARegistroProyecto = () => {
         navigate("/registroProyecto");
     };
@@ -28,7 +31,7 @@ const ListaProyectos = () => {
                             <button className="adelante-button">Adelante</button>
                         </div>*/}
                     <div className="bar-lista">
-                        <p1>MENU PRINCIPAL</p1>
+                        <p1 onClick={irAMenuOrganizaciones}>MENU PRINCIPAL</p1>
                     </div>
 
                     <div className="lista-profile-section" >

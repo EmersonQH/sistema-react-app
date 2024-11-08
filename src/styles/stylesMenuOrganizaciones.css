@@ -106,6 +106,7 @@ html, body {
     width: 100%;
     font-weight:bolder;
     font-size:larger;
+    cursor: pointer;
 }
 .p1 {
     align-items: center;

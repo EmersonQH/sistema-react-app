@@ -11,6 +11,10 @@ const MenuOrganizaciones = () => {
     const irAListaProyecto = () => {
         navigate("/listaProyecto");
     };
+    const irARegistroOrganizacion = () => {
+        navigate("/registroOrganizaciones");
+    };
+    
     return (
         <div className="menu-container">
             <header className="menu-header">
@@ -76,7 +80,7 @@ const MenuOrganizaciones = () => {
 
 
                         <div className="search-section-bar">
-                            <button className="register-button">Registrar Organización</button>
+                            <button onClick={irARegistroOrganizacion} className="register-button">Registrar Organización</button>
                             <div className="searchbar">
                                 <select className="year-input"><option>AÑO</option></select>
                                 <select className="month-input"><option>MES</option></select>
