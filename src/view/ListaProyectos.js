@@ -12,6 +12,9 @@ const ListaProyectos = () => {
     const irARegistroProyecto = () => {
         navigate("/registroProyecto");
     };
+    const irAMenuProyecto = () => {
+        navigate("/menuProyecto");
+    };
     const irALogin = () => {
         navigate("/");
     };
@@ -72,7 +75,7 @@ const ListaProyectos = () => {
                                     <th>Opciones</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody onClick={irAMenuProyecto}>
                                 <tr>
                                     <td>PROY-001</td>
                                     <td>SistemaInventario</td>
