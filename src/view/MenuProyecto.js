@@ -97,19 +97,19 @@ const MenuProyecto = () => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>ORG-0002</td>
-                                        <td>Mocar Company</td>
-                                        <td>23/10/2023</td>
+                                        <td>AUT-0006</td>
+                                        <td>Ilacion</td>
+                                        <td>23/10/2024</td>
                                         <td>00.01</td>
                                         <td>
                                         <button className="button-ver"><FaEye style={{ color: "brown", cursor: "pointer" }} /></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>ORG-0003</td>
-                                        <td>PetShop Veterinaria</td>
-                                        <td>10/05/2023</td>
-                                        <td>00.01</td>
+                                        <td>AUT-0007</td>
+                                        <td>Educcion</td>
+                                        <td>10/05/2024</td>
+                                        <td>00.02</td>
                                         <td>
                                             <button className="button-ver"><FaEye style={{ color: "brown", cursor: "pointer" }} /></button>
                                         </td>
