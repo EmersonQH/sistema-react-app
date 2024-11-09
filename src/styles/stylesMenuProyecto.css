@@ -136,7 +136,7 @@ h4 {
 .boton-container {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
     margin: 20px;
 }
 
