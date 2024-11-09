@@ -5,6 +5,7 @@ import MenuOrganizaciones from './view/MenuOrganizaciones.js';
 import ListaProyectos from './view/ListaProyectos.js';
 import RegistroProyecto from './view/RegistroProyecto.js';
 import RegistroOrganizacion from './view/RegistroOrganizacion.js';
+import MenuProyecto from './view/MenuProyecto.js';
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/registroOrganizaciones" element={<RegistroOrganizacion />} />
           <Route path="/listaProyecto" element={<ListaProyectos />} />
           <Route path="/registroProyecto" element={<RegistroProyecto />} />
+          <Route path="/menuProyecto" element={<MenuProyecto />} />
         </Routes>
       </div>
     </Router>
