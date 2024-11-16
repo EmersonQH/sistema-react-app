@@ -12,7 +12,7 @@ const MenuOrganizaciones = () => {
         navigate("/");
     };
     const irAListaProyecto = () => {
-        navigate("/listaProyecto");
+        navigate("/listaProyectos");
     };
     const irARegistroOrganizacion = () => {
         navigate("/registroOrganizaciones");

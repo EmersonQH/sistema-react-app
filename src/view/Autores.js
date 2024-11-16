@@ -9,8 +9,8 @@ const Autores = () => {
     const irAMenuOrganizaciones = () => {
         navigate("/menuOrganizaciones");
     };
-    const irARegistroProyecto = () => {
-        navigate("/registroProyecto");
+    const irANuevoAutor = () => {
+        navigate("/nuevoAutor");
     };
     const irALogin = () => {
         navigate("/");
@@ -47,7 +47,7 @@ const Autores = () => {
                     <section className="autor-organizations-section">
 
                         <div className="autor-search-section-bar">
-                            <button onClick={irARegistroProyecto} className="autor-register-button">Nuevo Autor</button>
+                            <button onClick={irANuevoAutor} className="autor-register-button">Nuevo Autor</button>
                             <div className="autor-sectionTextBuscar ">
                                 <input className="autor-textBuscar" type="text" placeholder="Buscar" />
                                 <button className="autor-search-button">Buscar</button>

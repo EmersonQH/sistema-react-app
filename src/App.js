@@ -8,6 +8,7 @@ import RegistroProyecto from './view/RegistroProyecto.js';
 import MenuProyecto from './view/MenuProyecto.js';
 import ActaAceptacion from './view/ActaAceptacion.js';
 import Autores from './view/Autores.js';
+import NuevoAutor from './view/NuevoAutor.js';
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/menuOrganizaciones" element={<MenuOrganizaciones />} />
           <Route path="/registroOrganizaciones" element={<RegistroOrganizacion />} />
-          <Route path="/listarproyectos" element={<ListaProyectos />} />
+          <Route path="/listaProyectos" element={<ListaProyectos />} />
           <Route path="/registroProyecto" element={<RegistroProyecto />} />
           <Route path="/menuProyecto" element={<MenuProyecto />} />
           <Route path="/actaAceptacion" element={<ActaAceptacion />} />
           <Route path="/autores" element={<Autores />} />
+          <Route path="/nuevoAutor" element={<NuevoAutor />} />
         </Routes>
       </div>
     </Router>
