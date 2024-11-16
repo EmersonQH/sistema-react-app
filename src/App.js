@@ -3,9 +3,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import MenuOrganizaciones from './view/MenuOrganizaciones.js';
 import ListaProyectos from './view/ListaProyectos.js';
-import RegistroProyecto from './view/RegistroProyecto.js';
 import RegistroOrganizacion from './view/RegistroOrganizacion.js';
+import RegistroProyecto from './view/RegistroProyecto.js';
 import MenuProyecto from './view/MenuProyecto.js';
+import ActaAceptacion from './view/ActaAceptacion.js';
+import Autores from './view/Autores.js';
+
 function App() {
   return (
     <Router>
@@ -14,9 +17,11 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/menuOrganizaciones" element={<MenuOrganizaciones />} />
           <Route path="/registroOrganizaciones" element={<RegistroOrganizacion />} />
-          <Route path="/listaProyecto" element={<ListaProyectos />} />
+          <Route path="/listarproyectos" element={<ListaProyectos />} />
           <Route path="/registroProyecto" element={<RegistroProyecto />} />
           <Route path="/menuProyecto" element={<MenuProyecto />} />
+          <Route path="/actaAceptacion" element={<ActaAceptacion />} />
+          <Route path="/autores" element={<Autores />} />
         </Routes>
       </div>
     </Router>
