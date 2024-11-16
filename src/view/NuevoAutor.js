@@ -10,6 +10,10 @@ const NuevoAutor = () => {
         navigate("/menuOrganizaciones");
     };
 
+    const irAAutores = () => {
+        navigate("/autores");
+    };
+
     const irALogin = () => {
         navigate("/");
     };
@@ -239,8 +243,8 @@ const NuevoAutor = () => {
                         </div>
 
                         <div className="ro-buttons">
-                            <button onClick={irAMenuOrganizaciones} className="ro-button" size="60">Cancelar</button>
-                            <button onClick={irAMenuOrganizaciones} className="ro-button" size="60">Crear Autor</button>
+                            <button onClick={irAAutores} className="ro-button" size="60">Cancelar</button>
+                            <button onClick={irAAutores} className="ro-button" size="60">Crear Autor</button>
                         </div>
                     </section>
                 </main>
